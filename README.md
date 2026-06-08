@@ -1,16 +1,78 @@
-# React + Vite
+# AGENCY-AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Agency landing page built with React, Vite, and Tailwind CSS. This project provides a clean, responsive template for showcasing services, portfolio work, team members, and contact information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Modern React components and layout for an agency website
+- Responsive design powered by Tailwind CSS
+- Fast development with Vite (HMR)
+- ESLint configured for consistent code quality
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** React 19
+- **Bundler / Dev Server:** Vite
+- **Styling:** Tailwind CSS
+- **Linting:** ESLint
 
-## Expanding the ESLint configuration
+## Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Requirements: Node.js 16+ and npm
+
+1. Install dependencies
+
+```bash
+npm install
+```
+
+2. Start dev server
+
+```bash
+npm run dev
+```
+
+3. Build for production
+
+```bash
+npm run build
+```
+
+4. Preview production build locally
+
+```bash
+npm run preview
+```
+
+5. Run linter
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+Key files and folders:
+
+- `src/` — application source
+	- `components/` — UI components (`Header.jsx`, `Hero.jsx`, `Services.jsx`, `OurWork.jsx`, `TeamMembers.jsx`, `TrustedCompanies.jsx`, `Contact.jsx`, `Footer.jsx`)
+	- `assets/` — images and asset helpers
+	- `main.jsx` — app entry
+	- `App.jsx` — root component
+- `index.html` — app HTML
+- `tailwind.config.js` — Tailwind configuration
+- `vite.config.js` — Vite configuration
+- `package.json` — scripts and dependencies
+
+## Notes
+
+- Tailwind is already configured in `tailwind.config.js`. Modify the content paths in that file when adding new pages or component folders.
+- ESLint is available via `npm run lint`. Adjust rules in the ESLint config if you add TypeScript or other frameworks.
+
+## Contributing
+
+Contributions are welcome. Open an issue or submit a pull request to propose changes.
+
+## License
+
+Specify a license for your project if you intend to open-source it.
